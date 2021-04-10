@@ -1,5 +1,6 @@
 <?php
-require_once('model/managerCompanies.php');
+require('model/managerCompanies.php');
+require('controller/controllerCompanies.php');
 ?>
 
 <section>
@@ -11,8 +12,6 @@ require_once('model/managerCompanies.php');
 
     <table>
     <?php
-    $request = new ManagerCompanies(); // partie render pour les compagnies / Manager communique avec controller
-    $companies = $request->getCompanies(); // partie render pour les compagnies / Vue affichage
     foreach ($companies as $company) : { ?>
 
         <tr>
