@@ -12,7 +12,8 @@ require('controller/controllerCompanies.php');
 
     <table>
     <?php
-    foreach ($companies as $company) : { ?>
+
+    foreach ($companies->getCompanies() as $key=>$company) { ?>
 
         <tr>
             <th>Nom</th>
@@ -29,7 +30,7 @@ require('controller/controllerCompanies.php');
             <th><?=$company['type']?></th>
         </tr>
 
-        <?php } endforeach;?>
+        <?php } ?>
     <table>
 </section>
 

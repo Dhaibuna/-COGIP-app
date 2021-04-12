@@ -1,4 +1,6 @@
 <?php
 declare(strict_types=1);
 
-require('view/homePageView.php');
+require('controller/controllerCompanies.php');
+
+$requestCompanie->index();

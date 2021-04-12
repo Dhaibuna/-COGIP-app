@@ -1,14 +1,16 @@
 <?php
-require('model/managerCompanies.php');
+
+require_once('model/managerCompanies.php');
 
 class CompaniesController
 {
-    public function homePage()
+    public function renderCompanies()
     {
-        $request = new ManagerCompanies(); // partie render pour les compagnies / Manager communique avec controller
-        $companies = $request->getCompanies(); // partie render pour les compagnies / Vue affichage
-
-        var_dumb($companies);
-        require('./view/homePageView.php');
+        $request = new ManagerCompanies();
+        // partie render pour les compagnies / Manager communique avec controller
+        $request->getCompanies();
+        // partie render pour les compagnies / Vue affichage
+        require('./view/homepage.php');
+        echo 'Hello';
     }
 }

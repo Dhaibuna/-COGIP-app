@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/COGIP.iml" filepath="$PROJECT_DIR$/.idea/COGIP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../tpOCminichat/.idea/tpOCminichat.iml" filepath="$PROJECT_DIR$/../tpOCminichat/.idea/tpOCminichat.iml" />
     </modules>
   </component>
 </project>
