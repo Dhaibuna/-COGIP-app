@@ -1,6 +1,9 @@
 <?php
 declare(strict_types=1);
 
-require('controller/controllerCompanies.php');
+require_once('controller/homePageController.php');
+// Require_once oblige a se déclarer une seule fois
 
-$requestCompanie->index();
+$controller = new homePageController();
+// j'instancie mon controller dans la variable que j'appelle en dessous
+$controller->render();

@@ -1,7 +1,5 @@
 <?php
 
-
-
 require_once('manager.php');
 
 class ManagerCompanies extends Manager{

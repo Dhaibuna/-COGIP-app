@@ -1,8 +1,13 @@
-<?php
-require('model/managerCompanies.php');
-require('controller/controllerCompanies.php');
-?>
-
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
 <section>
     <h1>Bienvenue à la COGIP !</h1>
 </section>
@@ -13,7 +18,7 @@ require('controller/controllerCompanies.php');
     <table>
     <?php
 
-    foreach ($companies->getCompanies() as $key=>$company) { ?>
+    foreach ($companies as $company) : ?>
 
         <tr>
             <th>Nom</th>
@@ -30,9 +35,10 @@ require('controller/controllerCompanies.php');
             <th><?=$company['type']?></th>
         </tr>
 
-        <?php } ?>
+        <?php endforeach ?>
     <table>
 </section>
-
+</body>
+</html>
 <!-- connexion base de données = model / fonctions = controller / affichage view
 // Voir la fonction render

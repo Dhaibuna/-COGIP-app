@@ -2,15 +2,14 @@
 
 require_once('model/managerCompanies.php');
 
-class CompaniesController
+class HomePageController
 {
-    public function renderCompanies()
+    public function render()
     {
-        $request = new ManagerCompanies();
+        $requestCompanies = new ManagerCompanies();
         // partie render pour les compagnies / Manager communique avec controller
-        $request->getCompanies();
+        $companies= $requestCompanies->getCompanies(); // $companies est appelée dans la view(foreach)
         // partie render pour les compagnies / Vue affichage
         require('./view/homepage.php');
-        echo 'Hello';
     }
 }
